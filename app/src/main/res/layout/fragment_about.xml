@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.about.AboutFragment">
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="220dp"
+            android:scaleType="fitXY"
+            android:id="@+id/schoolimage"
+            android:src="@drawable/school_comp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/about_college"
+            android:layout_marginTop="@dimen/text_margin"
+            android:layout_marginHorizontal="@dimen/text_margin"
+            android:textSize="@dimen/text_size"
+            android:layout_gravity="center_horizontal"
+            android:textColor="@color/textColor"
+            android:fontFamily="@string/light"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/text_margin"
+            android:paddingTop="@dimen/text_margin"
+            android:orientation="horizontal">
+            
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_label"
+                 />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Green Environment"
+                android:layout_marginLeft="@dimen/text_margin"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/text_margin"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_label"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Hightech Labs"
+                android:layout_marginLeft="@dimen/text_margin"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/text_margin"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_label"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Top Class Faculty"
+                android:layout_marginLeft="@dimen/text_margin"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/text_margin"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_label"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Library"
+                android:layout_marginLeft="@dimen/text_margin"/>
+
+        </LinearLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Departments"
+            android:layout_marginTop="36dp"
+            android:textSize="@dimen/title_size"
+            android:layout_gravity="center_horizontal"
+            android:textColor="@color/textColor"
+            android:fontFamily="@string/bold"/>
+        <androidx.viewpager.widget.ViewPager
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:layout_marginTop="@dimen/text_margin"
+            android:foregroundGravity="center"
+            android:clipToPadding="false"
+            android:overScrollMode="never"
+            android:id="@+id/viewPager"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="@dimen/text_margin">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Contact Details"
+                android:layout_marginTop="36dp"
+                android:layout_gravity="center_horizontal"
+                android:textSize="@dimen/title_size"
+                android:textColor="@color/textColor"
+                android:fontFamily="@string/bold"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="D Y Patil International School
+                                                                             Address: Sector 7, Nerul, Navi Mumbai, Maharashtra 400706
+                                                    Contact: +91 9819345678"
+                android:layout_marginTop="@dimen/text_margin"
+                android:layout_marginHorizontal="@dimen/text_margin"
+                android:textSize="@dimen/text_size"
+                android:textColor="@color/textColor"
+                android:fontFamily="@string/light"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:id="@+id/map"
+                android:layout_height="286dp"
+                android:src="@drawable/location" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+
+</androidx.core.widget.NestedScrollView>
